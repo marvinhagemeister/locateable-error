@@ -1,6 +1,6 @@
 {
   "name": "@marvinh/locateable-error",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Print nice debug traces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,10 +42,6 @@
     "typescript": "^2.5.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "prettier --write",
-      "npm run lint",
-      "git add"
-    ]
+    "*.{ts,tsx}": ["prettier --write", "npm run lint", "git add"]
   }
 }
