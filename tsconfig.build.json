@@ -1,4 +1,4 @@
 {
   "extends": "./tsconfig.json",
-  "files": ["./src/index.ts"]
+  "files": ["./typings/global.d.ts", "./src/index.ts"]
 }

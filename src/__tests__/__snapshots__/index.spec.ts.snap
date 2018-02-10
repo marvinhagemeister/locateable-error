@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatLocateable should create code-frame 1`] = `
+"> 1 | foo asd
+    |  ^ fail
+  2 | asd ads
+  3 | asd"
+`;
+
+exports[`formatLocateable should create code-frame with range 1`] = `
+"> 1 | foo asd
+    |  ^^^ fail
+  2 | asd ads
+  3 | asd"
+`;
