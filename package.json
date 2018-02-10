@@ -1,10 +1,14 @@
 {
   "name": "@marvinh/locateable-error",
   "version": "0.0.1",
-  "description": "typescript boilerplate project",
+  "description": "Print nice debug traces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Marvin Hagemeister <marvin@marvinhagemeister.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marvinhagemeister/locateable-error.git"
+  },
   "license": "MIT",
   "scripts": {
     "cleanup": "rimraf dist/",
