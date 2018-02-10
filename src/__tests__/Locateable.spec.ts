@@ -1,6 +1,11 @@
 import strip = require("strip-ansi");
 import chalk from "chalk";
-import { isSource, isLocation, isLocateable, formatLocateable } from "../index";
+import {
+  isSource,
+  isLocation,
+  isLocateable,
+  formatLocateable,
+} from "../Locateable";
 
 describe("isSource", () => {
   it("should be false", () => {
