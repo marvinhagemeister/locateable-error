@@ -9,4 +9,8 @@ src/
 .gitignore
 .prettierrc
 tsconfig.json
+tsconfig.build.json
+tsconfig.test.json
 tslint.json
+jest.config.js
+.vscode/

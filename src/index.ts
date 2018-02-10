@@ -1,4 +1,7 @@
-import { codeFrameColumns } from "@babel/code-frame";
+// tslint:disable-next-line no-reference
+/// <reference path="../typings/babel__code-frame.d.ts" />
+
+import { codeFrameColumns, Options } from "@babel/code-frame";
 import chalk from "chalk";
 
 export interface Source {
@@ -46,7 +49,10 @@ export function isLocateable(x: any): x is Locateable {
   );
 }
 
-export function formatLocateable(err: Locateable): string {
+export function formatLocateable(
+  err: Locateable,
+  options: Pick<Options, "linesAbove" | "linesBelow"> = {},
+): string {
   if (err.locations.length === 0) {
     return err.message;
   }
@@ -55,5 +61,6 @@ export function formatLocateable(err: Locateable): string {
   return codeFrameColumns(err.source.body, locs, {
     highlightCode: chalk.supportsColor.hasBasic,
     message: err.inlineMessage || err.message,
+    ...options,
   });
 }
